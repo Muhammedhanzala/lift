@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lift check</title>
+    <link rel="stylesheet" href="lift/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="buttons">
+            <button onclick="goToFloor(1)">
+                <img src="lift/1.png" alt="1"> 1
+            </button>
+            <button onclick="goToFloor(2)">
+                <img src="lift/1.png" alt="2"> 2
+            </button>
+            <button onclick="goToFloor(3)">
+                <img src="lift/1.png" alt="3"> 3
+            </button>
+            <button onclick="goToFloor(4)">
+                <img src="lift/1.png" alt="4"> 4
+            </button>
+            <button onclick="goToFloor(5)">
+                <img src="lift/1.png" alt="5"> 5
+            </button>
+            <button onclick="goToFloor(6)">
+                <img src="lift/1.png" alt="6"> 6
+            </button>
+            <button class="ground" onclick="goToGround()">
+                <img src="lift/1.png" alt="G"> Ground
+            </button>
+        </div>
+        <div class="escalator">
+            <div class="floor-indicator" id="floor-indicator">Ground Floor</div>
+            <div class="lift-container">
+                <div class="lift" id="lift">
+                    <div class="gate left-gate"></div>
+                    <div class="gate right-gate"></div>
+                </div>
+            </div>
+            <div class="floor-lines">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+    </div>
+<script src="lift/app.js"></script>
+</body>
+</html>
